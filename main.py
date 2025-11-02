@@ -1,8 +1,8 @@
 from classes.book import Book
 from classes.user import User
 from classes.library import Library
-from classes.logger import Logger
 from classes.system_admin import SystemAdmin
+from classes.logger import Logger
 
 book1 = Book("harry potter1","j.k rowlling","1243")
 book2 = Book("harry potter2","hagay","5678")
@@ -18,4 +18,7 @@ library.add_book(book2)
 library.add_book(book3)
 library.register_user(user1)
 library.register_user(user2)
-library.register_user(user3)
+
+print(library.books)
+print(library.users)
+library.perform_borrow(user1.user_id,book1.isbn)
