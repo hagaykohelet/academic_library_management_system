@@ -1,11 +1,21 @@
 from classes.book import Book
 from classes.user import User
+from classes.library import Library
+from classes.logger import Logger
+from classes.system_admin import SystemAdmin
+
+book1 = Book("harry potter1","j.k rowlling","1243")
+book2 = Book("harry potter2","hagay","5678")
+book3 = Book("harry potter3","j.k rowlling","1010")
+user1 = User("0123","hagay")
+user2 = User("4567","daniel")
+user3 = User("987","ary")
 
 
-book1 = Book("hagay","hagay","1243")
-
-user1 = User("segal","hagay")
-user1.borrow_book(book1)
-print(user1.borrowed_books)
-
-print(book1.get_details())
+library = Library()
+library.add_book(book1)
+library.add_book(book2)
+library.add_book(book3)
+library.register_user(user1)
+library.register_user(user2)
+library.register_user(user3)
