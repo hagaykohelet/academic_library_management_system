@@ -1,7 +1,7 @@
 from classes.user import User
 from classes.book import Book
-# from classes.logger import Logger
-# from classes.system_admin import SystemAdmin
+from classes.logger import Logger
+from classes.system_admin import SystemAdmin
 
 class Library:
     max_borrow_days = 14
@@ -11,10 +11,10 @@ class Library:
         self.users:dict[str,User] = {}
 
     def register_user(self,user:User):
-        self.users[user.user_id] = user.name
+        self.users[user.user_id] = user
 
     def add_book(self,book:Book):
-        self.books[book.isbn] = book.title
+        self.books[book.isbn] = book
 
     def perform_borrow(self,user_id:str, isbn:str):
         if user_id not in self.users[user_id].user_id:
