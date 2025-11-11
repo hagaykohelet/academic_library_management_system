@@ -13,11 +13,13 @@ user3 = User("987","ary")
 
 
 library = Library()
+
 library.add_book(book1)
 library.add_book(book2)
 library.add_book(book3)
 library.register_user(user1)
 library.register_user(user2)
+print(library.users)
 
 print(library.books)
 print(library.users)

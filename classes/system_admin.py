@@ -1,4 +1,4 @@
-from classes.library import Library
+# from classes.library import Library
 class SystemAdmin:
     total_transactions = 0
 
@@ -9,7 +9,7 @@ class SystemAdmin:
 
     @classmethod
 
-    def report_stats(cls):
+    def report_stats(cls,Library):
         print(f"total transactions is: {cls.total_transactions} days left to borrow {Library.max_borrow_days} ")
 
 

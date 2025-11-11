@@ -8,6 +8,8 @@ class Book:
 
 
     def get_details(self):
-        return f"teh name of book: {self.title}, the author:{self.author}, the id of book: {self.isbn}, the book in the library: {self.is_available}"
+        return f"the name of book: {self.title}, the author:{self.author}, the id of book: {self.isbn}, the book in the library: {self.is_available}"
+
+
 
 
