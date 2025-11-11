@@ -6,7 +6,7 @@ from classes.logger import Logger
 
 book1 = Book("harry potter1","j.k rowlling","1243")
 book2 = Book("harry potter2","hagay","5678")
-book3 = Book("harry potter3","j.k rowlling","1010")
+book3 = Book("harry potter3","j.k rowlling","987")
 user1 = User("0123","hagay")
 user2 = User("4567","daniel")
 user3 = User("987","ary")
@@ -23,4 +23,4 @@ print(library.users)
 
 print(library.books)
 print(library.users)
-library.perform_borrow(user1.user_id,book1.isbn)
+library.perform_borrow("987","5678")
